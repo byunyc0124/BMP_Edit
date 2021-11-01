@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Stage4Progress : MonoBehaviour
 {
@@ -16,10 +17,16 @@ public class Stage4Progress : MonoBehaviour
     void Update()
     {
         progress();
+        if (Stage1GrabObjectInteraction.cnt == 1)
+        {
+            PlayerPrefs.SetInt("stage4", 1);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("stage5");
+        }
     }
     // ÁøÇàµµ
     void progress()
     {
-        Progressbar.value = (float)Stage2GrabInteraction.cnt / 1f;
+        Progressbar.value = (float)Stage4_GrabInteraction.cnt / 1f;
     }
 }

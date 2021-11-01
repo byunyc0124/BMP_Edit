@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-public class Stage3LimitTime : MonoBehaviour
+public class Stage6LimitTime : MonoBehaviour
 {
     // UI
     [SerializeField] private Slider Timer;
@@ -29,9 +28,9 @@ public class Stage3LimitTime : MonoBehaviour
         }
         else
         {
-            PlayerPrefs.SetInt("stage3", 0);
+            PlayerPrefs.SetInt("stage6", 0);
             PlayerPrefs.Save();
-            SceneManager.LoadScene("stage4");
+            SceneManager.LoadScene("stage7");
         }
     }
 }

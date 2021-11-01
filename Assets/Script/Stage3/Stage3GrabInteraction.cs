@@ -32,7 +32,7 @@ public class Stage3GrabInteraction : MonoBehaviour
     private Text TimerText = null;
 
     // misson
-    private int cnt = 0;
+    public static int cnt = 0;
 
     void Start()
     {
@@ -87,6 +87,7 @@ public class Stage3GrabInteraction : MonoBehaviour
                         if (isDowned)
                         {
                             bt1.SetBool("isPush", true);
+                            cnt++;
                         }
                         else
                         {

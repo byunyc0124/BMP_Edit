@@ -20,6 +20,9 @@ public class Stage4_GrabInteraction : MonoBehaviour
     private Animator horse3 = null;
     private Animator horse4 = null;
 
+    // misson
+    public static int cnt = 0;
+
     void Start()
     {
         horse1 = GameObject.Find("Horse").GetComponent<Animator>();
@@ -46,6 +49,7 @@ public class Stage4_GrabInteraction : MonoBehaviour
                         if (isPushed)
                         {
                             heater.SetBool("Rotate", true);
+                            cnt++;
                         }
                         else
                         {

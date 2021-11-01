@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Stage1Progress : MonoBehaviour
+public class Stage7Progress : MonoBehaviour
 {
     [SerializeField] private Slider Progressbar;
     // Start is called before the first frame update
@@ -17,16 +17,17 @@ public class Stage1Progress : MonoBehaviour
     void Update()
     {
         progress();
-        if(Stage1GrabObjectInteraction.cnt == 2)
+        progress();
+        if (Stage1GrabObjectInteraction.cnt == 1)
         {
-            PlayerPrefs.SetInt("stage1", 1);
+            PlayerPrefs.SetInt("stage7", 1);
             PlayerPrefs.Save();
-            SceneManager.LoadScene("stage2");
+            SceneManager.LoadScene("stage 1 SIMULATION");
         }
     }
     // ÁøÇàµµ
     void progress()
     {
-        Progressbar.value = (float)Stage1GrabObjectInteraction.cnt / 2f;
+        Progressbar.value = (float)Stage7GrabInteraction.cnt / 1f;
     }
 }

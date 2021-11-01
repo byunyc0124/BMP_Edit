@@ -11,6 +11,9 @@ public class Stage6GrabInteraction : MonoBehaviour
     public GameObject glow;
     public Transform other;
 
+    // misson
+    public static int cnt = 0;
+
 
     // Start is called before the first frame update
     void Start()

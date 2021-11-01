@@ -23,7 +23,7 @@ public class Stage1GrabObjectInteraction : MonoBehaviour
     private Text TimerText = null;
 
     // misson
-    private int cnt = 0;
+    public static int cnt = 0;
 
 
     private void Start()
@@ -61,6 +61,7 @@ public class Stage1GrabObjectInteraction : MonoBehaviour
                 {
                     ps.Play();
                     SoundManger.instance.SFXPlay("liquid", clip);
+                    cnt++;
                 }
                 else
                 {

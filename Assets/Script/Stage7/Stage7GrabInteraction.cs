@@ -13,6 +13,9 @@ public class Stage7GrabInteraction : MonoBehaviour
     public GameObject glow;
     public Transform other;
 
+    // misson
+    public static int cnt = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,13 +42,5 @@ public class Stage7GrabInteraction : MonoBehaviour
             }
         }
 
-        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.secondaryButton, out bool primary2)) // Loading scene
-        {
-            buttonB = primary2;
-            if (buttonB)
-            {
-                SceneManager.LoadScene("stage 1 SIMULATION");
-            }
-        }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Stage2Progress : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class Stage2Progress : MonoBehaviour
     void Update()
     {
         progress();
+        if (Stage1GrabObjectInteraction.cnt == 2)
+        {
+            PlayerPrefs.SetInt("stage2", 1);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("stage3");
+        }
     }
     // ÁøÇàµµ
     void progress()

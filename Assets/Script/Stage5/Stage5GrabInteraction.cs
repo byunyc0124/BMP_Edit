@@ -12,14 +12,14 @@ public class Stage5GrabInteraction : MonoBehaviour
 
     // water animation
     private bool isFeed = false; // 사료 뿌린 상태 초기값 false
-    private bool buttonB = false;
     [SerializeField] private ParticleSystem ps;
     public GameObject glow;
 
     private Animator cow1 = null;
     private Animator cow2 = null;
 
-    
+    // misson
+    public static int cnt = 0;
 
     private void Start()
     {
@@ -33,30 +33,45 @@ public class Stage5GrabInteraction : MonoBehaviour
     {
         if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
         {
-            Destroy(glow);
-            if (isFeed != primary)
-            {
-                isFeed = primary; // button on trigger
-                if (isFeed)
+            if(CompareTag("L1")) { 
+                Destroy(glow);
+                if (isFeed != primary)
                 {
-                    Destroy(glow);
-                    ps.Play();
-                    cow1.SetBool("Eat", true);
-                    cow2.SetBool("Eat", true);
-                }
-                else
-                {
-                    ps.Stop();
+                    isFeed = primary; // button on trigger
+                    if (isFeed)
+                    {
+                        Destroy(glow);
+                        ps.Play();
+                        cow1.SetBool("Eat", true);
+                        //cow2.SetBool("Eat", true);
+                        cnt++;
+                    }
+                    else
+                    {
+                        ps.Stop();
+                    }
                 }
             }
-        }
 
-        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.secondaryButton, out bool primary2)) // Loading scene
-        {
-            buttonB = primary2;
-            if (buttonB)
+            if (CompareTag("L2"))
             {
-                LoadingSceneManager.LoadScene("stage6");
+                Destroy(glow);
+                if (isFeed != primary)
+                {
+                    isFeed = primary; // button on trigger
+                    if (isFeed)
+                    {
+                        Destroy(glow);
+                        ps.Play();
+                        //cow1.SetBool("Eat", true);
+                        cow2.SetBool("Eat", true);
+                        cnt++;
+                    }
+                    else
+                    {
+                        ps.Stop();
+                    }
+                }
             }
         }
     }
