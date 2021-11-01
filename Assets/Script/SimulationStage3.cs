@@ -49,4 +49,6 @@ public class SimulationStage3 : MonoBehaviour
         rabbit2.SetBool("Ok", true);
         rabbit3.SetBool("Ok", true);
     }
+
+    
 }

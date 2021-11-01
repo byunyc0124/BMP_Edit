@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3350974504264822092}
   - component: {fileID: 1814623115424522985}
   - component: {fileID: 4524465412221933091}
-  - component: {fileID: 2957656539502283432}
   m_Layer: 0
   m_Name: Pad
   m_TagString: Untagged
@@ -83,18 +82,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2957656539502283432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2723232063479625718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb569b67e99cf5442848c0fa7090b057, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2957656538268788814
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9529412, g: 0.8235294, b: 0.2627451, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -462,7 +449,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Progress
+  m_Text: "\uC9C4\uD589\uB3C4"
 --- !u!1 &2957656539413861679
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.23841406, g: 1, b: 0.135849, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -691,7 +678,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Timer
+  m_Text: "\uB0A8\uC740 \uC2DC\uAC04"
 --- !u!1 &2957656539713966696
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,9 +763,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 60
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 60
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -986,7 +973,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00
+  m_Text: 60
 --- !u!1 &3788649455407022777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,4 +1052,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 3
+  m_Text: 
