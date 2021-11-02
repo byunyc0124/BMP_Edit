@@ -21,7 +21,7 @@ public class Stage5Progress : MonoBehaviour
         {
             PlayerPrefs.SetInt("stage5", 1);
             PlayerPrefs.Save();
-            SceneManager.LoadScene("stage6");
+            SceneManager.LoadScene("tutorial board mode");
         }
     }
     // ÁøÇàµµ

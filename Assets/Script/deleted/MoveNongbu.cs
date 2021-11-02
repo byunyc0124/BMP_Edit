@@ -43,6 +43,16 @@ public class MoveNongbu : MonoBehaviour
         {
             CheckForMovement(controller.inputDevice);
         }
+
+        // 스테이지별 승패 조건이 있는 경우
+        if (PlayerPrefs.HasKey("stage1") && PlayerPrefs.HasKey("stage2") && PlayerPrefs.HasKey("stage3") && PlayerPrefs.HasKey("stage4") && PlayerPrefs.HasKey("stage5"))
+        {
+            PlayerPrefs.GetInt("stage1");
+            PlayerPrefs.GetInt("stage2");
+            PlayerPrefs.GetInt("stage3");
+            PlayerPrefs.GetInt("stage4");
+            PlayerPrefs.GetInt("stage5");
+        }
     }
 
     private void CheckForMovement(InputDevice device) // joystick direction
@@ -108,7 +118,7 @@ public class MoveNongbu : MonoBehaviour
                 if (isDowned != primary)
                 {
                     isDowned = primary;
-                    if(isDowned)
+                    if (isDowned)
                         LoadingSceneManager.LoadScene("stage1");
                 }
             }
@@ -223,6 +233,11 @@ public class MoveNongbu : MonoBehaviour
         {
             ring7.Stop();
         }
+    }
+
+    void bbomul()
+    {
+
     }
 }
 
