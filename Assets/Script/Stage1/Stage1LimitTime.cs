@@ -14,7 +14,7 @@ public class Stage1LimitTime : MonoBehaviour
     {
         // UI
         Timer = GameObject.Find("Timer").GetComponent<Slider>();
-        TimerText = GameObject.Find("Text").GetComponent<Text>();
+        TimerText = GameObject.Find("timertext").GetComponent<Text>();
     }
 
     // Update is called once per frame
