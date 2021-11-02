@@ -27,9 +27,9 @@ public class Stage3GrabInteraction : MonoBehaviour
     [SerializeField] public ParticleSystem water3;
 
     // UI
-    [SerializeField] private Slider Timer;
-    [SerializeField] private Slider Progress;
-    private Text TimerText = null;
+    //[SerializeField] private Slider Timer;
+    //[SerializeField] private Slider Progress;
+    //private Text TimerText = null;
 
     // misson
     public static int cnt = 0;
@@ -43,16 +43,16 @@ public class Stage3GrabInteraction : MonoBehaviour
         rabbit3 = GameObject.Find("WhiteRabbit3").GetComponent<Animator>();
 
         // UI
-        Timer = GameObject.Find("Timer").GetComponent<Slider>();
-        Progress = GameObject.Find("Progress").GetComponent<Slider>();
-        TimerText = GameObject.Find("Text").GetComponent<Text>();
+        //Timer = GameObject.Find("Timer").GetComponent<Slider>();
+        //Progress = GameObject.Find("Progress").GetComponent<Slider>();
+        //TimerText = GameObject.Find("Text").GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
         // 제한 시간
-        if (Timer.value > 0.0f)
+        /*if (Timer.value > 0.0f)
         {
             Timer.value -= Time.deltaTime;
             TimerText.text = Mathf.Floor(Timer.value).ToString();
@@ -63,7 +63,7 @@ public class Stage3GrabInteraction : MonoBehaviour
             PlayerPrefs.SetInt("stage3", 0);
             PlayerPrefs.Save();
             SceneManager.LoadScene("stage4");
-        }
+        }*/
         /*
         if (cnt == 1)
         {
@@ -130,9 +130,9 @@ public class Stage3GrabInteraction : MonoBehaviour
     }
 
     // 진행도
-    void progress()
+    /*void progress()
     {
         Progress.value = (float)cnt / 1f;
-    }
+    }*/
 
 }

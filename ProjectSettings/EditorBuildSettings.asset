@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/simulation/stage1 SIMULATION.unity
     guid: 885591d1c2e21f145a5220ff9ff08436
   - enabled: 0
-    path: Assets/Scenes/tutorial board mode.unity
+    path: Assets/Scenes/tutorialboard.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/Scenes/stage1.unity
@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ui final.unity
     guid: 06bcc05ce2db5cd4d994b57bdbb50381
   - enabled: 0
-    path: Assets/Scenes/free board mode 1.unity
+    path: Assets/Scenes/freeboard.unity
     guid: 0034425338a57fd419a97abb1bb07b20
   - enabled: 0
     path: Assets/Scenes/simulation/stage6 SIMULATION.unity

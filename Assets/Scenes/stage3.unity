@@ -4322,6 +4322,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5180059907469339454, guid: a0f916a00b522ae4a93372622f37e107,
+        type: 3}
+      propertyPath: m_Text
+      value: "A\uBC84\uD2BC\uC744 \uC774\uC6A9\uD574 \uC54C\uB9DE\uC740 \uBC84\uD2BC\uC744
+        \uB20C\uB7EC\uC11C \uC2A4\uD504\uB9C1\uCFE8\uB7EC\uB97C \uC791\uB3D9\uC2DC\uD0A4\uC138\uC694."
+      objectReference: {fileID: 0}
     - target: {fileID: 6348069638966810417, guid: a0f916a00b522ae4a93372622f37e107,
         type: 3}
       propertyPath: m_Text
@@ -7518,8 +7524,6 @@ MonoBehaviour:
   water1: {fileID: 1728075093}
   water2: {fileID: 968178920}
   water3: {fileID: 1591751636}
-  Timer: {fileID: 354704183}
-  Progress: {fileID: 354704182}
 --- !u!1001 &658688958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8968,8 +8972,6 @@ MonoBehaviour:
   water1: {fileID: 1728075093}
   water2: {fileID: 968178920}
   water3: {fileID: 1591751636}
-  Timer: {fileID: 354704183}
-  Progress: {fileID: 354704182}
 --- !u!1001 &800808349
 PrefabInstance:
   m_ObjectHideFlags: 0
