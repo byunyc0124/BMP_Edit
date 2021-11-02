@@ -5105,6 +5105,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5180059907469339454, guid: a0f916a00b522ae4a93372622f37e107,
+        type: 3}
+      propertyPath: m_Text
+      value: "\uD2B8\uB9AC\uAC70 \uBC84\uD2BC\uC744 \uB20C\uB7EC\uC11C \uBB3C\uBFCC\uB9AC\uAC1C\uB97C
+        \uC7A1\uACE0, A \uBC84\uD2BC\uC744 \uB20C\uB7EC \uBB3C\uC744 \uBFCC\uB9AC\uC138\uC694!"
+      objectReference: {fileID: 0}
     - target: {fileID: 6995191620959074065, guid: a0f916a00b522ae4a93372622f37e107,
         type: 3}
       propertyPath: m_Text
