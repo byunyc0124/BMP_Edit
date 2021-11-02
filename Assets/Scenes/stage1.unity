@@ -5048,7 +5048,7 @@ PrefabInstance:
     - target: {fileID: 2957656540019718001, guid: a0f916a00b522ae4a93372622f37e107,
         type: 3}
       propertyPath: m_MaxValue
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3350974504264822092, guid: a0f916a00b522ae4a93372622f37e107,
         type: 3}
@@ -5109,7 +5109,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "\uD2B8\uB9AC\uAC70 \uBC84\uD2BC\uC744 \uB20C\uB7EC\uC11C \uBB3C\uBFCC\uB9AC\uAC1C\uB97C
-        \uC7A1\uACE0, A \uBC84\uD2BC\uC744 \uB20C\uB7EC \uBB3C\uC744 \uBFCC\uB9AC\uC138\uC694!"
+        \uC7A1\uC73C\uC138\uC694."
       objectReference: {fileID: 0}
     - target: {fileID: 6995191620959074065, guid: a0f916a00b522ae4a93372622f37e107,
         type: 3}
