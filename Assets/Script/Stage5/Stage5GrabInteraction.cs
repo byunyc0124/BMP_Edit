@@ -15,7 +15,6 @@ public class Stage5GrabInteraction : MonoBehaviour
     private bool isFeed = false; // 사료 뿌린 상태 초기값 false
     [SerializeField] private ParticleSystem ps;
     public GameObject glow;
-    private Text expText = null;
 
     private Animator cow1 = null;
     private Animator cow2 = null;
@@ -28,7 +27,6 @@ public class Stage5GrabInteraction : MonoBehaviour
         ps = GameObject.Find("FeedEffect").GetComponent<ParticleSystem>();
         cow1 = GameObject.Find("Cow (1)").GetComponent<Animator>();
         cow2 = GameObject.Find("Cow (2)").GetComponent<Animator>();
-        expText = GameObject.Find("Explanation").GetComponent<Text>();
 
     }
 
@@ -38,7 +36,6 @@ public class Stage5GrabInteraction : MonoBehaviour
         {
             if(CompareTag("L1")) { 
                 Destroy(glow);
-                expText.text = "A 버튼을 눌러 사료를 주세요!";
                 if (isFeed != primary)
                 {
                     isFeed = primary; // button on trigger
@@ -60,7 +57,6 @@ public class Stage5GrabInteraction : MonoBehaviour
             if (CompareTag("L2"))
             {
                 Destroy(glow);
-                expText.text = "A 버튼을 눌러 사료를 주세요!";
                 if (isFeed != primary)
                 {
                     isFeed = primary; // button on trigger
