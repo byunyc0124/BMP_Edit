@@ -13,6 +13,12 @@ public class result : MonoBehaviour
     private Animator switch3;
     private Animator switch4;
     private Animator switch5;
+
+    Renderer st1Color;
+    Renderer st2Color;
+    Renderer st3Color;
+    Renderer st4Color;
+    Renderer st5Color;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +28,11 @@ public class result : MonoBehaviour
         switch3 = GameObject.Find("stage3").GetComponent<Animator>();
         switch4 = GameObject.Find("stage4").GetComponent<Animator>();
         switch5 = GameObject.Find("stage5").GetComponent<Animator>();
+        st1Color = GameObject.Find("HexSt1").GetComponent<Renderer>();
+        st2Color = GameObject.Find("HexSt2").GetComponent<Renderer>();
+        st3Color = GameObject.Find("HexSt3").GetComponent<Renderer>();
+        st4Color = GameObject.Find("HexSt4").GetComponent<Renderer>();
+        st5Color = GameObject.Find("HexSt5").GetComponent<Renderer>();
     }
 
     // Update is called once per frame
@@ -38,6 +49,12 @@ public class result : MonoBehaviour
             if (PlayerPrefs.GetInt("stage1") == 1)
             {
                 switch1.SetBool("Rotate", true);
+                st1Color.material.color = new Color(255, 127, 0);
+            }
+            else
+            {
+                switch1.SetBool("Rotate", true);
+                st1Color.material.color = Color.gray;
             }
         }
         if (PlayerPrefs.HasKey("stage2"))
@@ -45,6 +62,12 @@ public class result : MonoBehaviour
             if (PlayerPrefs.GetInt("stage2") == 1)
             {
                 switch2.SetBool("Rotate", true);
+                st2Color.material.color = new Color(255, 127, 0);
+            }
+            else
+            {
+                switch2.SetBool("Rotate", true);
+                st2Color.material.color = Color.gray;
             }
         }
         if (PlayerPrefs.HasKey("stage3"))
@@ -52,6 +75,12 @@ public class result : MonoBehaviour
             if (PlayerPrefs.GetInt("stage3") == 1)
             {
                 switch3.SetBool("Rotate", true);
+                st3Color.material.color = new Color(255, 127, 0);
+            }
+            else
+            {
+                switch3.SetBool("Rotate", true);
+                st3Color.material.color = Color.gray;
             }
         }
         if (PlayerPrefs.HasKey("stage4"))
@@ -59,6 +88,12 @@ public class result : MonoBehaviour
             if (PlayerPrefs.GetInt("stage4") == 1)
             {
                 switch4.SetBool("Rotate", true);
+                st4Color.material.color = new Color(255, 127, 0);
+            }
+            else
+            {
+                switch4.SetBool("Rotate", true);
+                st4Color.material.color = Color.gray;
             }
         }
         if (PlayerPrefs.HasKey("stage5"))
@@ -66,6 +101,12 @@ public class result : MonoBehaviour
             if (PlayerPrefs.GetInt("stage5") == 1)
             {
                 switch5.SetBool("Rotate", true);
+                st5Color.material.color = new Color(255, 127, 0);
+            }
+            else
+            {
+                switch5.SetBool("Rotate", true);
+                st5Color.material.color = Color.gray;
             }
         }
 

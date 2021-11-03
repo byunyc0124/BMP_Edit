@@ -4757,7 +4757,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1589122122581606, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_Name
-      value: Hex9 (7)
+      value: HexSt1
       objectReference: {fileID: 0}
     - target: {fileID: 4382090544710082, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_RootOrder
@@ -33119,7 +33119,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1589122122581606, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_Name
-      value: Hex9 (9)
+      value: HexSt5
       objectReference: {fileID: 0}
     - target: {fileID: 4382090544710082, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_RootOrder
@@ -39799,7 +39799,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1589122122581606, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_Name
-      value: Hex9 (12)
+      value: HexSt4
       objectReference: {fileID: 0}
     - target: {fileID: 4382090544710082, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_RootOrder
@@ -57833,7 +57833,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1589122122581606, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_Name
-      value: Hex9 (1)
+      value: HexSt3
       objectReference: {fileID: 0}
     - target: {fileID: 4382090544710082, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_RootOrder
@@ -58228,7 +58228,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1589122122581606, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_Name
-      value: Hex9 (4)
+      value: HexSt2
       objectReference: {fileID: 0}
     - target: {fileID: 4382090544710082, guid: b6b0c220ebe042b498958eadf1f52fa4, type: 3}
       propertyPath: m_RootOrder
