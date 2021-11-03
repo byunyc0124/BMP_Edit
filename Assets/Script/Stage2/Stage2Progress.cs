@@ -19,7 +19,7 @@ public class Stage2Progress : MonoBehaviour
     void Update()
     {
         progress();
-        if (Stage2GrabObjectInteraction.cnt == 2)
+        if (Stage2GrabInteraction.cnt == 2)
         {
             ClearText.text = "Clear!";
             PlayerPrefs.SetInt("stage2", 1);

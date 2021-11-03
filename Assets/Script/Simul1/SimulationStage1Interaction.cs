@@ -222,7 +222,7 @@ public class SimulationStage1Interaction : MonoBehaviour
             buttonB = primary2;
             if (buttonB)
             {
-                SceneManager.LoadScene("stage3 SIMULATION");
+                SceneManager.LoadScene("simul3");
             }
         }
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 public class MoveNongbu : MonoBehaviour
 {
@@ -119,7 +120,7 @@ public class MoveNongbu : MonoBehaviour
                 {
                     isDowned = primary;
                     if (isDowned)
-                        LoadingSceneManager.LoadScene("stage1");
+                        SceneManager.LoadScene("stage1");
                 }
             }
         }
@@ -132,7 +133,7 @@ public class MoveNongbu : MonoBehaviour
                 {
                     isDowned = primary;
                     if (isDowned)
-                        LoadingSceneManager.LoadScene("stage2");
+                        SceneManager.LoadScene("stage2");
                 }
             }
         }
@@ -145,7 +146,7 @@ public class MoveNongbu : MonoBehaviour
                 {
                     isDowned = primary;
                     if (isDowned)
-                        LoadingSceneManager.LoadScene("stage3");
+                        SceneManager.LoadScene("stage3");
                 }
             }
         }
@@ -158,7 +159,7 @@ public class MoveNongbu : MonoBehaviour
                 {
                     isDowned = primary;
                     if (isDowned)
-                        LoadingSceneManager.LoadScene("stage4");
+                        SceneManager.LoadScene("stage4");
                 }
             }
         }
@@ -171,7 +172,7 @@ public class MoveNongbu : MonoBehaviour
                 {
                     isDowned = primary;
                     if (isDowned)
-                        LoadingSceneManager.LoadScene("stage5");
+                        SceneManager.LoadScene("stage5");
                 }
             }
         }
@@ -184,7 +185,7 @@ public class MoveNongbu : MonoBehaviour
                 {
                     isDowned = primary;
                     if (isDowned)
-                        LoadingSceneManager.LoadScene("stage6");
+                        SceneManager.LoadScene("stage6");
                 }
             }
         }
@@ -197,7 +198,7 @@ public class MoveNongbu : MonoBehaviour
                 {
                     isDowned = primary;
                     if (isDowned)
-                        LoadingSceneManager.LoadScene("stage7");
+                        SceneManager.LoadScene("stage7");
                 }
             }
         }
