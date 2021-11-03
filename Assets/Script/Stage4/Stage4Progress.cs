@@ -19,7 +19,7 @@ public class Stage4Progress : MonoBehaviour
     void Update()
     {
         progress();
-        if (Stage1GrabObjectInteraction.cnt == 2)
+        if (Stage1GrabObjectInteraction.cnt == 1)
         {
             ClearText.text = "Clear!";
             PlayerPrefs.SetInt("stage4", 1);
@@ -30,7 +30,7 @@ public class Stage4Progress : MonoBehaviour
     // ÁøÇàµµ
     void progress()
     {
-        Progressbar.value = (float)Stage4_GrabInteraction.cnt / 2f;
+        Progressbar.value = (float)Stage4_GrabInteraction.cnt / 1f;
     }
     void Loader()
     {
