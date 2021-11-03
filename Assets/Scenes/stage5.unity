@@ -3673,7 +3673,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834362989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.279, y: 2.72, z: 1.726}
+  m_LocalPosition: {x: 3.279, y: 2.44, z: 1.726}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 471221240}
@@ -5041,7 +5041,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1135097312
 MonoBehaviour:
@@ -5533,13 +5533,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149489575}
-  m_LocalRotation: {x: 0.7381597, y: -0.000000059604638, z: 0.00000001536682, w: 0.67462605}
-  m_LocalPosition: {x: 0.004, y: 0.174, z: 0.036}
+  m_LocalRotation: {x: -0.008186913, y: 0.6853201, z: 0.72777516, w: 0.02475315}
+  m_LocalPosition: {x: 0.004, y: 0.501, z: 0.065}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_Children: []
   m_Father: {fileID: 1254268451}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 95.149994, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 266.307, y: -160.019, z: -22.651001}
 --- !u!199 &1149489577
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5689,7 +5689,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5742,7 +5742,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 7
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5858,7 +5858,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -6233,7 +6233,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 5
+    type: 4
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -12301,8 +12301,8 @@ GameObject:
   - component: {fileID: 1414333641}
   - component: {fileID: 1414333640}
   - component: {fileID: 1414333639}
-  - component: {fileID: 1414333642}
   - component: {fileID: 1414333643}
+  - component: {fileID: 1414333642}
   m_Layer: 4
   m_Name: Plane
   m_TagString: Untagged
@@ -12318,7 +12318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414333637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.013, z: 0}
+  m_LocalPosition: {x: 0, y: 0.024, z: -0}
   m_LocalScale: {x: 0.017798001, y: 0.05, z: 0.043081503}
   m_Children: []
   m_Father: {fileID: 1490829756}
@@ -12387,20 +12387,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414333637}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1414333642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414333637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cc7feea32b48af43832d358adb1637d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  part: {fileID: 1149489578}
---- !u!65 &1414333643
+--- !u!65 &1414333642
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12411,8 +12398,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 0.000000027939677, z: 9.999998}
-  m_Center: {x: -0.0000076293945, y: -0.0000019073486, z: 0}
+  m_Size: {x: 10, y: 1.2149194, z: 9.999998}
+  m_Center: {x: -0.000020018133, y: 0.7299596, z: 4.894998e-10}
+--- !u!114 &1414333643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414333637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447761877c0804349a193478db948693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  part: {fileID: 0}
 --- !u!1001 &1417796156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16151,8 +16151,8 @@ GameObject:
   - component: {fileID: 2064274159}
   - component: {fileID: 2064274158}
   - component: {fileID: 2064274157}
-  - component: {fileID: 2064274161}
   - component: {fileID: 2064274160}
+  - component: {fileID: 2064274161}
   m_Layer: 4
   m_Name: Plane
   m_TagString: Untagged
@@ -16168,7 +16168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064274155}
   m_LocalRotation: {x: -0.000000067055225, y: -0.011250913, z: 0.00000008288771, w: 0.9999367}
-  m_LocalPosition: {x: 0.002, y: -0.005, z: -0.02}
+  m_LocalPosition: {x: 0.002, y: 0.011, z: -0.02}
   m_LocalScale: {x: 0.017792985, y: 0.04999854, z: 0.043080512}
   m_Children: []
   m_Father: {fileID: 86626572}
@@ -16261,8 +16261,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000001, y: 0.000000009313226, z: 10.000001}
-  m_Center: {x: -0.000030517578, y: -0.0000038146973, z: 0}
+  m_Size: {x: 10.000002, y: 1.4977814, z: 10.000001}
+  m_Center: {x: 0.000000021284254, y: 1.0080307, z: 0.0000000016040694}
 --- !u!1001 &2069697877
 PrefabInstance:
   m_ObjectHideFlags: 0

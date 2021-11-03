@@ -7,13 +7,14 @@ public class Bucket_ver_feed : MonoBehaviour
     public ParticleSystem part;
     MeshRenderer mesh;
     Material mat;
-    public static int exp = 0;
+    private Animator cow1 = null;
 
     void Start()
     {
         part = GetComponent<ParticleSystem>();
         mesh = GetComponent<MeshRenderer>();
         mat = mesh.material;
+        cow1 = GameObject.Find("Cow (1)").GetComponent<Animator>();
     }
 
     private void Update()
@@ -26,10 +27,9 @@ public class Bucket_ver_feed : MonoBehaviour
         Debug.Log("충돌감지");
         if (other.tag == "Water")
         {
-            Debug.Log("흙에 물이 닿았다.");
+            cow1.SetBool("Eat", true);
             Invoke("ColorChange", 3.0f);
         }
-
     }
 
     public void ColorChange()
@@ -37,8 +37,7 @@ public class Bucket_ver_feed : MonoBehaviour
         if (mat.color != new Color(51 / 255f, 0 / 255f, 0 / 255f, 255 / 255f))
         {
             mat.color = new Color(51 / 255f, 0 / 255f, 0 / 255f, 255 / 255f);
-            exp++;
-            print(exp);
+            Stage5GrabInteraction.cnt++;
         }
     }
 }
