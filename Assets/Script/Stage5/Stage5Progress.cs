@@ -34,6 +34,6 @@ public class Stage5Progress : MonoBehaviour
     }
     void Loader()
     {
-        SceneManager.LoadScene("tutorialboard");
+        SceneManager.LoadScene("Result");
     }
 }

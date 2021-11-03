@@ -28,6 +28,8 @@ public class MoveNongbu : MonoBehaviour
     [SerializeField] public ParticleSystem ring6;
     [SerializeField] public ParticleSystem ring7;
 
+    
+
     private bool isDowned = false; // 버튼 초기 상태
 
     // Values
@@ -43,16 +45,6 @@ public class MoveNongbu : MonoBehaviour
         if (controller.enableInputActions)
         {
             CheckForMovement(controller.inputDevice);
-        }
-
-        // 스테이지별 승패 조건이 있는 경우
-        if (PlayerPrefs.HasKey("stage1") && PlayerPrefs.HasKey("stage2") && PlayerPrefs.HasKey("stage3") && PlayerPrefs.HasKey("stage4") && PlayerPrefs.HasKey("stage5"))
-        {
-            PlayerPrefs.GetInt("stage1");
-            PlayerPrefs.GetInt("stage2");
-            PlayerPrefs.GetInt("stage3");
-            PlayerPrefs.GetInt("stage4");
-            PlayerPrefs.GetInt("stage5");
         }
     }
 
@@ -114,93 +106,31 @@ public class MoveNongbu : MonoBehaviour
         if (other.CompareTag("S1"))
         {
             ring1.Play();
-            if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
-            {
-                if (isDowned != primary)
-                {
-                    isDowned = primary;
-                    if (isDowned)
-                        SceneManager.LoadScene("stage1");
-                }
-            }
+            Invoke("Loader", 5f);
         }
         else if (other.CompareTag("S2"))
         {
             ring2.Play();
-            if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
-            {
-                if (isDowned != primary)
-                {
-                    isDowned = primary;
-                    if (isDowned)
-                        SceneManager.LoadScene("stage2");
-                }
-            }
         }
         else if (other.CompareTag("S3"))
         {
             ring3.Play();
-            if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
-            {
-                if (isDowned != primary)
-                {
-                    isDowned = primary;
-                    if (isDowned)
-                        SceneManager.LoadScene("stage3");
-                }
-            }
         }
         else if (other.CompareTag("S4"))
         {
             ring4.Play();
-            if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
-            {
-                if (isDowned != primary)
-                {
-                    isDowned = primary;
-                    if (isDowned)
-                        SceneManager.LoadScene("stage4");
-                }
-            }
         }
         else if (other.CompareTag("S5"))
         {
             ring5.Play();
-            if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
-            {
-                if (isDowned != primary)
-                {
-                    isDowned = primary;
-                    if (isDowned)
-                        SceneManager.LoadScene("stage5");
-                }
-            }
         }
         else if (other.CompareTag("S6"))
         {
             ring6.Play();
-            if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
-            {
-                if (isDowned != primary)
-                {
-                    isDowned = primary;
-                    if (isDowned)
-                        SceneManager.LoadScene("stage6");
-                }
-            }
         }
         else if (other.CompareTag("S7"))
         {
             ring7.Play();
-            if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
-            {
-                if (isDowned != primary)
-                {
-                    isDowned = primary;
-                    if (isDowned)
-                        SceneManager.LoadScene("stage7");
-                }
-            }
         }
     }
 
@@ -236,9 +166,16 @@ public class MoveNongbu : MonoBehaviour
         }
     }
 
-    void bbomul()
-    {
+    
 
+    void Loader()
+    {
+        SceneManager.LoadScene("stage1");
+    }
+
+    void gotoboard()
+    {
+        SceneManager.LoadScene("freeboard");
     }
 }
 
