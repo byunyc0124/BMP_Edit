@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/stage5.unity
     guid: 79bd91e340120254385dd5e69bb9e1f1
   - enabled: 1
+    path: Assets/Scenes/Result.unity
+    guid: 6841e392af295c341ba208dc6db37e54
+  - enabled: 1
     path: Assets/Scenes/freeboard.unity
     guid: 0034425338a57fd419a97abb1bb07b20
   - enabled: 1

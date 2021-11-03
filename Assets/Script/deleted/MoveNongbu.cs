@@ -173,9 +173,6 @@ public class MoveNongbu : MonoBehaviour
         SceneManager.LoadScene("stage1");
     }
 
-    void gotoboard()
-    {
-        SceneManager.LoadScene("freeboard");
-    }
+    
 }
 
