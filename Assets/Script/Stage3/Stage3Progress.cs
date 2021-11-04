@@ -24,7 +24,7 @@ public class Stage3Progress : MonoBehaviour
             ClearText.text = "Clear!";
             PlayerPrefs.SetInt("stage3", 1);
             PlayerPrefs.Save();
-            Invoke("Loader", 5f);
+            Invoke("Loader", 12f);
         }
     }
     // ÁøÇàµµ
