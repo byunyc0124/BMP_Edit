@@ -38,6 +38,6 @@ public class Stage5LimitTime : MonoBehaviour
 
     void Loader()
     {
-        SceneManager.LoadScene("tutorialboard");
+        SceneManager.LoadScene("Result");
     }
 }
