@@ -11,7 +11,6 @@ public class Stage3GrabInteraction : MonoBehaviour
 {
     public XRController controller = null;
     private bool isDowned = false; // 버튼 초기 상태
-    private bool buttonB = false;
     public GameObject glow;
     public Transform other;
 
@@ -26,10 +25,6 @@ public class Stage3GrabInteraction : MonoBehaviour
     [SerializeField] public ParticleSystem water2;
     [SerializeField] public ParticleSystem water3;
 
-    // UI
-    //[SerializeField] private Slider Timer;
-    //[SerializeField] private Slider Progress;
-    //private Text TimerText = null;
 
     // misson
     public static int cnt = 0;
@@ -42,36 +37,11 @@ public class Stage3GrabInteraction : MonoBehaviour
         rabbit2 = GameObject.Find("WhiteRabbit2").GetComponent<Animator>();
         rabbit3 = GameObject.Find("WhiteRabbit3").GetComponent<Animator>();
 
-        // UI
-        //Timer = GameObject.Find("Timer").GetComponent<Slider>();
-        //Progress = GameObject.Find("Progress").GetComponent<Slider>();
-        //TimerText = GameObject.Find("Text").GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // 제한 시간
-        /*if (Timer.value > 0.0f)
-        {
-            Timer.value -= Time.deltaTime;
-            TimerText.text = Mathf.Floor(Timer.value).ToString();
-            Invoke("progress", 5);
-        }
-        else
-        {
-            PlayerPrefs.SetInt("stage3", 0);
-            PlayerPrefs.Save();
-            SceneManager.LoadScene("stage4");
-        }*/
-        /*
-        if (cnt == 1)
-        {
-            PlayerPrefs.SetInt("stage3", 1);
-            PlayerPrefs.Save();
-            SceneManager.LoadScene("stage4");
-        }*/
-
         if (other)
         {
             float dist = Vector3.Distance(other.position, transform.position);
@@ -128,11 +98,5 @@ public class Stage3GrabInteraction : MonoBehaviour
         rabbit2.SetBool("Ok", true);
         rabbit3.SetBool("Ok", true);
     }
-
-    // 진행도
-    /*void progress()
-    {
-        Progress.value = (float)cnt / 1f;
-    }*/
 
 }

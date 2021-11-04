@@ -46,66 +46,66 @@ public class result : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("stage1"))
         {
+            switch1.SetBool("RotateSt1", true);
+
             if (PlayerPrefs.GetInt("stage1") == 1)
             {
-                switch1.SetBool("Rotate", true);
                 st1Color.material.color = new Color(255, 127, 0);
             }
             else
             {
-                switch1.SetBool("Rotate", true);
                 st1Color.material.color = Color.gray;
             }
         }
         if (PlayerPrefs.HasKey("stage2"))
         {
+            switch2.SetBool("RotateSt2", true);
+
             if (PlayerPrefs.GetInt("stage2") == 1)
             {
-                switch2.SetBool("Rotate", true);
                 st2Color.material.color = new Color(255, 127, 0);
             }
             else
             {
-                switch2.SetBool("Rotate", true);
                 st2Color.material.color = Color.gray;
             }
         }
         if (PlayerPrefs.HasKey("stage3"))
         {
+            switch3.SetBool("RotateSt3", true);
+
             if (PlayerPrefs.GetInt("stage3") == 1)
             {
-                switch3.SetBool("Rotate", true);
                 st3Color.material.color = new Color(255, 127, 0);
             }
             else
             {
-                switch3.SetBool("Rotate", true);
                 st3Color.material.color = Color.gray;
             }
         }
         if (PlayerPrefs.HasKey("stage4"))
         {
+            switch4.SetBool("RotateSt4", true);
+
             if (PlayerPrefs.GetInt("stage4") == 1)
             {
-                switch4.SetBool("Rotate", true);
                 st4Color.material.color = new Color(255, 127, 0);
             }
             else
             {
-                switch4.SetBool("Rotate", true);
                 st4Color.material.color = Color.gray;
             }
         }
         if (PlayerPrefs.HasKey("stage5"))
         {
+            switch5.SetBool("RotateSt5", true);
+
             if (PlayerPrefs.GetInt("stage5") == 1)
             {
-                switch5.SetBool("Rotate", true);
                 st5Color.material.color = new Color(255, 127, 0);
             }
             else
             {
-                switch5.SetBool("Rotate", true);
                 st5Color.material.color = Color.gray;
             }
         }
