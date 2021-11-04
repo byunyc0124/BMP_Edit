@@ -30,13 +30,6 @@ public class Stage2GrabInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cnt == 2)
-        {
-            PlayerPrefs.SetInt("stage2", 1);
-            PlayerPrefs.Save();
-            SceneManager.LoadScene("stage3");
-        }
-
         if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary))
         {
             if (CompareTag("L1"))

@@ -106,7 +106,7 @@ public class MoveNongbu : MonoBehaviour
         if (other.CompareTag("S1"))
         {
             ring1.Play();
-            Invoke("Loader", 5f);
+            Invoke("Loader", 3f);
         }
         else if (other.CompareTag("S2"))
         {
@@ -165,8 +165,6 @@ public class MoveNongbu : MonoBehaviour
             ring7.Stop();
         }
     }
-
-    
 
     void Loader()
     {
